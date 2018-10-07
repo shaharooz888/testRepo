@@ -24,6 +24,6 @@ import cucumber.api.junit.Cucumber;
 		}
 	)
 
-public class day2runner{
+public class day2runnerTest{
 	
 }

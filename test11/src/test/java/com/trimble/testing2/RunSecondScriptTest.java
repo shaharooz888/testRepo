@@ -9,7 +9,12 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		
 		features = {"src/test/java/com/trimble/testing2/SheetFeature.feature"},
-		glue = {"/src/test/resources/UpdatedJsonPost/Pot.json"}
+		glue = {"/src/test/resources/UpdatedJsonPost/Pot.json"},
+				plugin={"pretty",
+						"html:target/cucumber-htmlreport",
+						"json:target/cucumber-report688.json",
+						"com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport1.html"
+				}
 		)
 		
 public class RunSecondScriptTest{
